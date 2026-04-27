@@ -1,0 +1,7 @@
+create materialized view lag_views_table as
+SELECT article, 
+	   views,
+       LAG(views) OVER (PARTITION BY article ORDER BY datetime) as views_lag,
+	   datetime,
+	   LAG(datetime) OVER (PARTITION BY article ORDER BY datetime) as datetime_lag
+FROM fact_pageviews;
