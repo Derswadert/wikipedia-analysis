@@ -23,5 +23,19 @@ services:
     depends_on:
       - postgres
 
+  grafana:
+    image: grafana/grafana-oss
+    container_name: portfolio_grafana
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+
 volumes:
   pgdata:
+  grafana_data:
