@@ -37,5 +37,6 @@ services:
       - grafana_data:/var/lib/grafana
 
 volumes:
+  - ./demo_pageviews.csv:/docker-entrypoint-initdb.d/demo_pageviews.csv
   pgdata:
   grafana_data:
