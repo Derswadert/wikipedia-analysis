@@ -11,6 +11,9 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./demo_pageviews.csv:/docker-entrypoint-initdb.d/demo_pageviews.csv
+      - ./SQL/SQL_create_table.sql:/docker-entrypoint-initdb.d/01_table.sql
+      - ./SQL/SQL_create_index.sql:/docker-entrypoint-initdb.d/02_index.sql
+      - ./SQL/SQL_create_views.sql:/docker-entrypoint-initdb.d/03_views.sql
 
   pgadmin:
     image: dpage/pgadmin4
