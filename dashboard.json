@@ -3,10 +3,21 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "adhvhs7",
+    "namespace": "default",
+    "uid": "1c47844c-55d6-4253-9eba-6be43e8a4ef2",
+    "resourceVersion": "1777299060588987",
     "generation": 20,
     "creationTimestamp": "2026-04-24T19:34:02Z",
-    "labels": {},
-    "annotations": {}
+    "labels": {
+      "grafana.app/deprecatedInternalID": "3126767072657408"
+    },
+    "annotations": {
+      "grafana.app/createdBy": "user:dfk2uinjyhnnkb",
+      "grafana.app/folder": "",
+      "grafana.app/saved-from-ui": "Grafana v13.0.1 (a100054f21)",
+      "grafana.app/updatedBy": "user:dfk2uinjyhnnkb",
+      "grafana.app/updatedTimestamp": "2026-04-27T14:11:00Z"
+    }
   },
   "spec": {
     "annotations": [
@@ -17,10 +28,10 @@
             "kind": "DataQuery",
             "group": "grafana",
             "version": "v0",
-            "spec": {},
-            "labels": {
-              "grafana.app/export-label": "grafana-1"
-            }
+            "datasource": {
+              "name": "-- Grafana --"
+            },
+            "spec": {}
           },
           "enable": true,
           "hide": true,
@@ -51,6 +62,9 @@
                       "kind": "DataQuery",
                       "group": "grafana-postgresql-datasource",
                       "version": "v0",
+                      "datasource": {
+                        "name": "ffk2vclm5vmdcd"
+                      },
                       "spec": {
                         "dataset": "portfolio",
                         "editorMode": "code",
@@ -75,9 +89,6 @@
                           "limit": 50
                         },
                         "table": "fact_pageviews"
-                      },
-                      "labels": {
-                        "grafana.app/export-label": "grafana-postgresql-datasource-1"
                       }
                     },
                     "refId": "A",
@@ -171,6 +182,9 @@
                       "kind": "DataQuery",
                       "group": "grafana-postgresql-datasource",
                       "version": "v0",
+                      "datasource": {
+                        "name": "ffk2vclm5vmdcd"
+                      },
                       "spec": {
                         "dataset": "portfolio",
                         "editorMode": "code",
@@ -194,9 +208,6 @@
                           ],
                           "limit": 50
                         }
-                      },
-                      "labels": {
-                        "grafana.app/export-label": "grafana-postgresql-datasource-1"
                       }
                     },
                     "refId": "A",
@@ -284,6 +295,9 @@
                       "kind": "DataQuery",
                       "group": "grafana-postgresql-datasource",
                       "version": "v0",
+                      "datasource": {
+                        "name": "ffk2vclm5vmdcd"
+                      },
                       "spec": {
                         "dataset": "portfolio",
                         "editorMode": "code",
@@ -307,9 +321,6 @@
                           ],
                           "limit": 50
                         }
-                      },
-                      "labels": {
-                        "grafana.app/export-label": "grafana-postgresql-datasource-1"
                       }
                     },
                     "refId": "A",
@@ -434,6 +445,9 @@
                       "kind": "DataQuery",
                       "group": "grafana-postgresql-datasource",
                       "version": "v0",
+                      "datasource": {
+                        "name": "ffk2vclm5vmdcd"
+                      },
                       "spec": {
                         "dataset": "portfolio",
                         "editorMode": "code",
@@ -491,9 +505,6 @@
                           "limit": 50
                         },
                         "table": "fact_pageviews"
-                      },
-                      "labels": {
-                        "grafana.app/export-label": "grafana-postgresql-datasource-1"
                       }
                     },
                     "refId": "A",
@@ -574,6 +585,9 @@
                       "kind": "DataQuery",
                       "group": "grafana-postgresql-datasource",
                       "version": "v0",
+                      "datasource": {
+                        "name": "ffk2vclm5vmdcd"
+                      },
                       "spec": {
                         "dataset": "portfolio",
                         "editorMode": "code",
@@ -597,9 +611,6 @@
                           ],
                           "limit": 50
                         }
-                      },
-                      "labels": {
-                        "grafana.app/export-label": "grafana-postgresql-datasource-1"
                       }
                     },
                     "refId": "A",
