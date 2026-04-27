@@ -29,4 +29,9 @@ create TABLE fact_pageviews_day7 PARTITION OF fact_pageviews
 
 create TABLE fact_pageviews_default PARTITION OF fact_pageviews DEFAULT;
 
+COPY fact_pageviews(article, views, language, platform, datetime)
+FROM '/docker-entrypoint-initdb.d/demo_pageviews.csv'
+DELIMITER ',' 
+CSV HEADER;
+
 
