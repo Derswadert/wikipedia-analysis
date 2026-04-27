@@ -10,6 +10,7 @@ services:
       - "5433:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+      - ./demo_pageviews.csv:/docker-entrypoint-initdb.d/demo_pageviews.csv
 
   pgadmin:
     image: dpage/pgadmin4
@@ -37,6 +38,5 @@ services:
       - grafana_data:/var/lib/grafana
 
 volumes:
-  - ./demo_pageviews.csv:/docker-entrypoint-initdb.d/demo_pageviews.csv
   pgdata:
   grafana_data:
