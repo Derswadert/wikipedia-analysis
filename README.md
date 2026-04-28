@@ -28,6 +28,26 @@
 - SQL
 - Parquet
 
+### Запуск проекта
+
+1. Клонировать репозиторий:
+```bash
+git clone https://github.com/derswadert/wikipedia-analysis.git
+cd wikipedia-analysis
+```
+2. Запустить контейнеры:
+```bash
+docker-compose up
+```
+3. Подключение к pgAdmin
+
+Email: admin@admin.com
+Пароль: admin
+
+4. 
+
+
+
 
 
 
