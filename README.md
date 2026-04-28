@@ -28,7 +28,7 @@
 - SQL
 - Parquet
 
-### Запуск проекта
+## Запуск проекта
 
 1. Клонировать репозиторий:
 ```bash
@@ -41,10 +41,49 @@ docker-compose up
 ```
 3. Подключение к pgAdmin
 
+Открыть в браузере: http://localhost:8081
+
 Email: admin@admin.com
 Пароль: admin
 
-4. 
+4. Подключение к базе данных в pgAdmin
+
+Servers → Register → Server...
+
+Вкладка General: 
+- Name — 'любое'
+
+Вкладка Connections: 
+- Host name/address — postgres
+- Port — 5432
+- Maintenance database — portfolio
+- Username — analyst
+- Password — password123
+
+5. Подключение к BI Grafana
+
+Открыть в браузере: http://localhost:3001
+
+Логин: admin
+Пароль: admin
+
+Connections -> Data Source -> Add new data Source
+
+- Host URL — postgres:5432
+- Database name — portfolio
+- Username — analyst
+- Password — password123
+
+6. Импорт дашбордов
+
+Dashboards -> New -> Import -> Upload 
+
+
+
+
+  
+
+
 
 
 
